@@ -55,9 +55,20 @@ connectDB();
 app.use(express.static(join(__dirname, 'public')));
 app.use(express.json());
 
-// endpoints ... middlewares.. apis?
-//WHAT THE FLIP AM I DOING
+// Main route to serve the library page
+app.get('/', (req, res) => {
+  res.sendFile(join(__dirname, 'public', 'library.html'));
+});
 
+// Get all books
+app.get('/api/books', async (req, res) => {
+  try {
+    const books = await erikasBooks.find({}).toArray();
+    res.json(books);
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to fetch books' });
+  }
+});
 
 //create a new book entry
 app.post('/api/books', async (req, res) => {
