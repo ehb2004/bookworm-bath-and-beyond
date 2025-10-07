@@ -41,6 +41,11 @@ connectDB();
 app.use(express.static(join(__dirname, "public")));
 app.use(express.json());
 
+// Root route - serve the main library page
+app.get('/', (req, res) => {
+  res.sendFile(join(__dirname, "public", "library.html"));
+});
+
 /*
 endpoints for CRUD operations
 all endpoints were derived from https://github.com/barrycumbie/stunning-octo-fortnight-hello-express
@@ -149,4 +154,6 @@ app.delete("/api/books/:id", async (req, res) => {
   }
 });
 
-app.listen(PORT);
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
