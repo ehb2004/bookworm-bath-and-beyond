@@ -1,67 +1,42 @@
 body {
-  background-color: #B392AC;
+  background-color: #e2d4c6;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-#pageNav {
-  background-color: #E8EBE4;
+/* Sidebar customizations */
+.custom-sidebar {
+  background-color: #1e4f74;
 }
 
-.book-collection {
-  max-width: 900px;
-  margin: 20px auto;
-  background-color: white;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+.custom-sidebar .text-white {
+  color: #e2d4c6 !important;
 }
 
-.book-collection h1 {
-  color: #4A4A4A;
-  text-align: center;
-  margin-bottom: 20px;
-  font-weight: bold;
+.custom-sidebar a:hover {
+  color: #ad9e8f !important;
+  text-decoration: underline;
 }
 
-.book-collection p {
-  color: #666;
-  text-align: center;
-  font-size: 1.1em;
-  margin-bottom: 30px;
+/* Custom tab highlight color */
+.custom-sidebar .nav-item {
+  width: 100%;
 }
 
-.navbar-brand {
-  font-weight: bold;
-  color: #4A4A4A !important;
+.custom-sidebar .nav-link {
+  width: 100% !important;
+  display: block !important;
+  padding: 0.5rem 1rem !important;
 }
 
-.card {
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-}
+.custom-sidebar .nav-link.active {
+  background-color: #258766 !important;
+  color: #000 !important;
+  border-radius: 5px !important;
+} 
 
-.card-title {
-  color: #4A4A4A;
-  font-weight: bold;
-}
-
-.btn-primary {
-  background-color: #8B7A9B;
-  border-color: #8B7A9B;
-}
-
-.btn-primary:hover {
-  background-color: #7A6A8A;
-  border-color: #7A6A8A;
-}
-
-.badge {
-  font-size: 0.8em;
-}
-
-.form-control:focus {
-  border-color: #B392AC;
-  box-shadow: 0 0 0 0.2rem rgba(179, 146, 172, 0.25);
+.custom-sidebar .nav-link:hover {
+  background-color: rgba(148, 204, 185, 0.3) !important;
+  border-radius: 5px !important;
 }
