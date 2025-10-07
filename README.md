@@ -10,4 +10,4 @@ Created by Erika Beasley for CIS-486.
 As an avid reader, I wanted to track my books in order to organize my reading and help me find my next read!!
 
 ## Narrative
-This running app is a revamped version of my original running log that I created for my first project in CIS-366. It's really come full circle.
+This app is just a fun project used to be able to keep a log of all of my books as well as whether or not I have read them.
